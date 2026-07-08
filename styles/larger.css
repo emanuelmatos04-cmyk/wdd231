@@ -1,0 +1,42 @@
+@media (min-width: 48rem) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin: 2rem;
+  }
+
+  .about, .photo {
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+  }
+
+  .courses {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+    text-align: center;
+    background: #eee;
+    padding: 1rem;
+  }
+
+  .social a {
+    margin: 0 0.5rem;
+  }
+}

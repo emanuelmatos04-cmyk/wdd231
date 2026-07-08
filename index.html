@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Student Portfolio Home Page">
+  <meta name="author" content="Emanuel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD231 Home</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Web and Computer Programming Certificate</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chamber/">Chamber Project</a></li>
+        <li><a href="final/">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I am a passionate web developer with a strong foundation in both frontend and backend technologies. I enjoy creating responsive and user-friendly websites that provide an excellent user experience.</p>
+    </section>
+    <section class="photo">
+      <h2>Student Photo</h2>
+      <img src="Images/emanu.jpg" alt="Student photo" width="300" height="400">
+    </section>
+
+    <section class="courses">
+      <h2>Web Certificate Courses</h2>
+      <div class="filters">
+        <button id="allBtn">All</button>
+        <button id="cseBtn">CSE</button>
+        <button id="wddBtn">WDD</button>
+      </div>
+      <div id="courses"></div>
+      <p>Total credits: <span id="totalCredits"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a>
+      <a href="https://github.com/yourgithubusername">GitHub</a>
+      <a href="#">Other</a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> Emanuel • Dominican Republic</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

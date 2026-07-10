@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Student Portfolio Home Page">
+  <meta name="description" content="Portfolio home page showcasing Emanuel's web development projects, certificate courses, and responsive design skills.">
   <meta name="author" content="Emanuel">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD231 Home</title>
+  <title>Web and Computer Programming Certificate – WDD231</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
   <script src="scripts/navigation.js" defer></script>
@@ -14,10 +17,12 @@
 </head>
 <body>
   <header>
+    <img src="images/logo.svg" alt="Site Logo" width="50" height="50">
     <h1>Web and Computer Programming Certificate</h1>
+    <button id="menu" aria-label="Menu">&#9776;</button>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="chamber/">Chamber Project</a></li>
         <li><a href="final/">Final Project</a></li>
       </ul>
@@ -31,7 +36,7 @@
     </section>
     <section class="photo">
       <h2>Student Photo</h2>
-      <img src="Images/emanu.jpg" alt="Student photo" width="300" height="400">
+      <img src="images/emanu.jpg" alt="Student photo">
     </section>
 
     <section class="courses">
@@ -48,8 +53,8 @@
 
   <footer>
     <div class="social">
-      <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a>
-      <a href="https://github.com/yourgithubusername">GitHub</a>
+      <a href="https://linkedin.com/in/emanuelmatos04">LinkedIn</a>
+      <a href="https://github.com/emanuelmatos04">GitHub</a>
       <a href="#">Other</a>
     </div>
     <p>&copy; <span id="currentyear"></span> Emanuel • Dominican Republic</p>

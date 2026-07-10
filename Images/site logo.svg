@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90">
+<rect width="320" height="90" fill="#fff"/>
+<rect x="18" y="18" width="54" height="40" rx="4" fill="none" stroke="#123a73" stroke-width="3"/>
+<path d="M33 38l8-8m-8 8l8 8M57 30l-6 16M63 30l8 8-8 8" stroke="#1f6fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="88" y="40" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#123a73">WDD231</text>
+<text x="88" y="61" font-family="Arial,sans-serif" font-size="11" fill="#2b4c7e">Web and Computer Programming</text>
+</svg>

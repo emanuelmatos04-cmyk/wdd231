@@ -26,7 +26,12 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
 </head>
+
 <body>
   <header>
     <nav>
@@ -41,12 +46,15 @@
 
   <main>
     <h1>Chamber Directory</h1>
+
     <section>
       <h2>Members</h2>
+
       <div class="view-toggle">
-        <button id="gridBtn">Grid View</button>
-        <button id="listBtn">List View</button>
+        <button id="gridBtn" type="button">Grid View</button>
+        <button id="listBtn" type="button">List View</button>
       </div>
+
       <div id="membersContainer" class="grid"></div>
     </section>
   </main>
@@ -55,7 +63,5 @@
     <p>&copy; <span id="currentyear"></span> Emanuel Matos | WDD 231 | Santo Domingo</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
-  <script src="scripts/date.js" defer></script>
-  <script src="scripts/directory.js" defer></script>
 </body>
 </html>

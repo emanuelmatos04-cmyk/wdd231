@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta Basics -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chamber Directory - Santo Domingo</title>
-  <meta name="description" content="Business directory for Santo Domingo Chamber of Commerce">
-  <meta name="author" content="Emanuel">
+  <meta name="description" content="Discover businesses and opportunities in Santo Domingo through our Chamber of Commerce directory.">
+  <meta name="author" content="Emanuel Matos">
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-  <!-- Facebook Open Graph Meta -->
-  <meta property="og:title" content="Santo Domingo Chamber Directory">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Open Graph Meta for Social Media -->
+  <meta property="og:title" content="Santo Domingo Chamber Directory – Local Business Network">
   <meta property="og:description" content="Explore local businesses and members of the Santo Domingo Chamber of Commerce.">
-  <meta property="og:image" content="images/preview.jpg">
-  <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/chamber/directory.html">
+  <meta property="og:image" content="https://emanuelmatos04-cmyk.github.io/wdd231/chamber/images/preview.jpg">
+  <meta property="og:url" content="https://emanuelmatos04-cmyk.github.io/wdd231/chamber/directory.html">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
@@ -23,9 +29,8 @@
 </head>
 <body>
   <header>
-    <h1>Chamber Directory</h1>
     <nav>
-      <button id="menuButton">☰</button>
+      <button id="menuButton" aria-label="Toggle navigation menu">☰</button>
       <ul id="menuItems">
         <li><a href="directory.html">Directory</a></li>
         <li><a href="index.html">Home</a></li>
@@ -35,6 +40,8 @@
   </header>
 
   <main>
+    <!-- h1 must be inside main -->
+    <h1>Chamber Directory</h1>
     <section>
       <h2>Members</h2>
       <div class="view-toggle">
@@ -46,10 +53,11 @@
   </main>
 
   <footer>
-    <p>&copy; <span id="currentyear"></span> Emanuel | WDD 231 | Santo Domingo</p>
+    <p>&copy; <span id="currentyear"></span> Emanuel Matos | WDD 231 | Santo Domingo</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
+  <!-- JavaScript -->
   <script src="scripts/date.js" defer></script>
   <script src="scripts/directory.js" defer></script>
 </body>

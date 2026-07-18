@@ -1,18 +1,42 @@
 [
   {
+    "name": "BlueWave Telecom",
+    "address": "Av. Lincoln 75, Santo Domingo",
+    "phone": "809-555-5319",
+    "website": "https://bluewavetelecom.com",
+    "image": "bluewave.png",
+    "membership": 2
+  },
+  {
+    "name": "CarFinance",
+    "address": "Av. Máximo Gómez 200, Santo Domingo",
+    "phone": "809-555-7890",
+    "website": "https://carfinance.com",
+    "image": "carfinance.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Creative Studio",
+    "address": "Calle El Conde 12, Santo Domingo",
+    "phone": "809-555-8642",
+    "website": "https://creativestudio.com",
+    "image": "creativestudio.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Island Fitness",
+    "address": "Av. Churchill 300, Santo Domingo",
+    "phone": "809-555-9753",
+    "website": "https://islandfitness.com",
+    "image": "islandfitness.jpg",
+    "membership": 1
+  },
+  {
     "name": "Tech Solutions",
     "address": "Av. Independencia 123, Santo Domingo",
     "phone": "809-555-1234",
     "website": "https://techsolutions.com",
     "image": "techsolutions.jpg",
     "membership": 3
-  },
-  {
-    "name": "Green Market",
-    "address": "Calle Duarte 45, Santo Domingo",
-    "phone": "809-555-5678",
-    "website": "https://greenmarket.com",
-    "image": "greenmarket.jpg",
-    "membership": 2
   }
 ]

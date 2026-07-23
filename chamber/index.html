@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Basics -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santo Domingo Chamber of Commerce</title>
+  <meta name="description" content="Welcome to the Santo Domingo Chamber of Commerce. Connect with local businesses and opportunities.">
+  <meta name="author" content="Emanuel Matos">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <button id="menuButton" aria-label="Toggle navigation menu">☰</button>
+      <ul id="menuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="View of Santo Domingo">
+      <h1>Welcome to the Santo Domingo Chamber of Commerce</h1>
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="cta">
+      <a href="join.html" class="btn">Join Now!</a>
+    </aside>
+
+    <!-- Current Events -->
+    <section class="events">
+      <h2>Current Events</h2>
+      <p>Business Networking – July 25</p>
+      <p>Innovation Forum – August 2</p>
+    </section>
+
+    <!-- Weather -->
+    <section class="weather">
+      <h2>Weather in Santo Domingo</h2>
+      <p id="temperature"></p>
+      <p id="description"></p>
+      <div id="forecast"></div>
+    </section>
+
+    <!-- Spotlights -->
+    <section class="spotlights">
+      <h2>Featured Companies</h2>
+      <div id="spotlight-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Emanuel Matos | WDD 231 | Santo Domingo</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Chamber - Santo Domingo</title>
+  <meta name="description" content="Become a member of the Santo Domingo Chamber of Commerce and connect with local businesses.">
+  <meta name="author" content="Emanuel Matos">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <button id="menuButton" aria-label="Toggle navigation menu">☰</button>
+      <ul id="menuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Santo Domingo Chamber of Commerce</h1>
+    <p>Fill out the form below to become a member and enjoy exclusive benefits, networking opportunities, and community support.</p>
+
+    <form id="joinForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="business">Business Name:</label>
+      <input type="text" id="business" name="business" required>
+
+      <label for="membership">Membership Level:</label>
+      <select id="membership" name="membership" required>
+        <option value="">Select a level</option>
+        <option value="Bronze">Bronze</option>
+        <option value="Silver">Silver</option>
+        <option value="Gold">Gold</option>
+      </select>
+
+      <button type="submit" class="btn">Submit Application</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Emanuel Matos | WDD 231 | Santo Domingo</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

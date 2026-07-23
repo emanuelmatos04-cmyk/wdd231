@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Santo Domingo Chamber of Commerce</title>
+  <meta name="description" content="Get in touch with the Santo Domingo Chamber of Commerce for inquiries, partnerships, or support.">
+  <meta name="author" content="Emanuel Matos">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <button id="menuButton" aria-label="Toggle navigation menu">☰</button>
+      <ul id="menuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact the Santo Domingo Chamber of Commerce</h1>
+    <p>We’re here to help! Reach out to us for membership questions, event details, or partnership opportunities.</p>
+
+    <section class="contact-info">
+      <h2>Office Information</h2>
+      <p><strong>Address:</strong> 123 Business Avenue, Santo Domingo, Dominican Republic</p>
+      <p><strong>Phone:</strong> +1 (809) 555‑1234</p>
+      <p><strong>Email:</strong> info@santodomingo‑chamber.org</p>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Emanuel Matos | WDD 231 | Santo Domingo</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

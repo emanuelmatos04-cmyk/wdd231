@@ -1,4 +1,4 @@
-const apiKey = "TU_API_KEY";
+const apiKey = "f9aebeafd996ec9928b084ae1d58484e";
 const url = `https://api.openweathermap.org/data/2.5/forecast?q=Santo%20Domingo,DO&units=imperial&appid=${apiKey}`;
 
 async function getWeather() {

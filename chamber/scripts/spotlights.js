@@ -1,21 +1,30 @@
 async function loadSpotlights() {
-  const response = await fetch("data/members.json");
-  const members = await response.json();
+  try {
+    const response = await fetch("data/members.json");
+    const data = await response.json();
 
-  const goldSilver = members.filter(m => m.membership === "Gold" || m.membership === "Silver");
-  const random = goldSilver.sort(() => 0.5 - Math.random()).slice(0,3);
+    // Filter gold/silver members
+    const goldSilver = data.members.filter(m =>
+      m.membership === "Gold" || m.membership === "Silver"
+    );
 
-  const container = document.getElementById("spotlight-container");
-  random.forEach(m => {
-    container.innerHTML += `
-      <div class="card">
-        <img src="images/${m.logo}" alt="${m.name}">
-        <h3>${m.name}</h3>
-        <p>${m.phone}</p>
-        <p>${m.address}</p>
-        <a href="${m.website}" target="_blank">${m.website}</a>
-        <p>Nivel: ${m.membership}</p>
-      </div>`;
-  });
+    // Randomly select 2–3
+    const random = goldSilver.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+    const container = document.getElementById("spotlight-container");
+    container.innerHTML = "";
+    random.forEach(member => {
+      container.innerHTML += `
+        <div class="spotlight">
+          <img src="${member.logo}" alt="${member.name}">
+          <h3>${member.name}</h3>
+          <p>${member.phone}</p>
+          <p>${member.address}</p>
+          <a href="${member.website}" target="_blank">${member.website}</a>
+        </div>`;
+    });
+  } catch (err) {
+    console.error("Spotlight error:", err);
+  }
 }
 loadSpotlights();

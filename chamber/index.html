@@ -31,6 +31,7 @@
   <script src="scripts/date.js" defer></script>
   <script src="scripts/weather.js" defer></script>
   <script src="scripts/spotlights.js" defer></script>
+  <script src="scripts/nav.js" defer></script>
 </head>
 
 <body>
@@ -38,7 +39,7 @@
     <nav>
       <button id="menuButton" aria-label="Toggle navigation menu">☰</button>
       <ul id="menuItems">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -51,12 +52,11 @@
     <section class="hero">
       <img src="images/chamber.jpg" alt="View of Santo Domingo">
       <h1>Welcome to the Santo Domingo Chamber of Commerce</h1>
+      <!-- Call to Action overlay -->
+      <aside class="cta">
+        <a href="join.html" class="btn">Join Now!</a>
+      </aside>
     </section>
-
-    <!-- Call to Action -->
-    <aside class="cta">
-      <a href="join.html" class="btn">Join Now!</a>
-    </aside>
 
     <!-- Current Events -->
     <section class="events">

@@ -1,86 +1,38 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  background: #eee;
-}
-
-.logo-area {
-  display: flex;
-  align-items: center;
-}
-
-.site-logo {
-  width: 140px; /* más grande en mobile */
-  height: auto;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Navigation */
+#menuItems {
   display: none;
   flex-direction: column;
-  background: #f9f9f9;
+  background: #000;
 }
-
-nav ul li {
-  border-bottom: 1px solid #ddd;
+#menuItems.open {
+  display: flex;
 }
-
-nav ul li a {
-  display: block;
-  padding: 0.75rem;
-  text-decoration: none;
-  color: #333;
-}
-
-nav a.active {
-  font-weight: bold;
-  border-bottom: 2px solid #333;
-}
-
-#menu {
-  font-size: 1.5rem;
+#menuButton {
   background: none;
   border: none;
-  cursor: pointer;
+  font-size: 1.5rem;
+  color: #000;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+/* Hero + CTA */
+.hero {
+  position: relative;
+  text-align: center;
 }
-
-.about, .photo, .courses {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background: #fafafa;
-  border: 1px solid #ddd;
-}
-
-img {
-  max-width: 100%;
+.hero img {
+  width: 100%;
   height: auto;
 }
-
-footer {
-  background: #eee;
-  text-align: center;
-  padding: 1rem;
+.cta {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-footer .social a {
-  margin: 0 0.5rem;
+.btn {
+  background: #fff;
+  color: #000;
+  padding: 10px 20px;
   text-decoration: none;
-  color: #333;
+  border-radius: 5px;
 }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Santo Domingo Chamber</title>
+  <meta name="description" content="Thank you for joining the Santo Domingo Chamber of Commerce.">
+  <meta name="author" content="Emanuel Matos">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+  <header>
+    <h1>Thank You for Joining!</h1>
+  </header>
+
+  <main>
+    <p>We appreciate your application. Here are the details you submitted:</p>
+    <ul>
+      <li><strong>First Name:</strong> <span id="firstName"></span></li>
+      <li><strong>Last Name:</strong> <span id="lastName"></span></li>
+      <li><strong>Email:</strong> <span id="email"></span></li>
+      <li><strong>Mobile:</strong> <span id="phone"></span></li>
+      <li><strong>Business:</strong> <span id="organization"></span></li>
+      <li><strong>Timestamp:</strong> <span id="timestamp"></span></li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Emanuel Matos | WDD 231 | Santo Domingo</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    // Get query string parameters
+    const params = new URLSearchParams(window.location.search);
+
+    // Fill in the spans with submitted data
+    document.getElementById("firstName").textContent = params.get("firstName") || "";
+    document.getElementById("lastName").textContent = params.get("lastName") || "";
+    document.getElementById("email").textContent = params.get("email") || "";
+    document.getElementById("phone").textContent = params.get("phone") || "";
+    document.getElementById("organization").textContent = params.get("organization") || "";
+    document.getElementById("timestamp").textContent = params.get("timestamp") || "";
+
+    // Footer dynamic year and last modified
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
+

@@ -8,9 +8,24 @@
   <meta name="author" content="Emanuel Matos">
 
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Join the Santo Domingo Chamber of Commerce – Membership Application">
+  <meta property="og:description" content="Apply today to join the Santo Domingo Chamber of Commerce. Connect with local businesses, enjoy exclusive benefits, and grow your network.">
+  <meta property="og:image" content="https://emanuelmatos04-cmyk.github.io/wdd231/chamber/images/chamberlogo.png">
+  <meta property="og:url" content="https://emanuelmatos04-cmyk.github.io/wdd231/chamber/join.html">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css">
+
+  <!-- JS -->
   <script src="scripts/date.js" defer></script>
   <script src="scripts/nav.js" defer></script>
   <script src="scripts/join.js" defer></script>
@@ -35,39 +50,32 @@
 
     <!-- Membership Application Form -->
     <form id="joinForm" method="get" action="thankyou.html">
-      <label>
-        First Name:
+      <label>First Name:
         <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
       </label>
 
-      <label>
-        Last Name:
+      <label>Last Name:
         <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
       </label>
 
-      <label>
-        Organizational Title:
+      <label>Organizational Title:
         <input type="text" name="orgTitle" title="Organization Title" autocomplete="organization-title"
                pattern="[A-Za-z\\-\\s]{7,}">
       </label>
 
-      <label>
-        Email Address:
+      <label>Email Address:
         <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@email.com" required>
       </label>
 
-      <label>
-        Mobile Phone:
+      <label>Mobile Phone:
         <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
       </label>
 
-      <label>
-        Business/Organization Name:
+      <label>Business/Organization Name:
         <input type="text" name="organization" title="Organization" autocomplete="organization" required>
       </label>
 
-      <label>
-        Membership Level:
+      <label>Membership Level:
         <select name="membership" title="Membership Level" required>
           <option value="">Select a level</option>
           <option value="np">NP Membership (Non-Profit)</option>
@@ -77,8 +85,7 @@
         </select>
       </label>
 
-      <label>
-        Business Description:
+      <label>Business Description:
         <textarea name="description" title="Business Description"></textarea>
       </label>
 
@@ -112,25 +119,25 @@
     <dialog id="npModal">
       <h3>NP Membership Benefits</h3>
       <p>No fee, access to community events, networking opportunities.</p>
-      <button onclick="document.getElementById('npModal').close()">Close</button>
+      <button class="close-btn" data-modal="npModal">Close</button>
     </dialog>
 
     <dialog id="bronzeModal">
       <h3>Bronze Membership Benefits</h3>
       <p>Basic advertising, event discounts, and training sessions.</p>
-      <button onclick="document.getElementById('bronzeModal').close()">Close</button>
+      <button class="close-btn" data-modal="bronzeModal">Close</button>
     </dialog>
 
     <dialog id="silverModal">
       <h3>Silver Membership Benefits</h3>
       <p>Spotlight positions, advanced training, and premium networking.</p>
-      <button onclick="document.getElementById('silverModal').close()">Close</button>
+      <button class="close-btn" data-modal="silverModal">Close</button>
     </dialog>
 
     <dialog id="goldModal">
       <h3>Gold Membership Benefits</h3>
       <p>Exclusive events, maximum advertising, and leadership opportunities.</p>
-      <button onclick="document.getElementById('goldModal').close()">Close</button>
+      <button class="close-btn" data-modal="goldModal">Close</button>
     </dialog>
   </main>
 

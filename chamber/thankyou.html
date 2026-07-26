@@ -35,10 +35,8 @@
   </footer>
 
   <script>
-    // Get query string parameters
+    // Read query string parameters
     const params = new URLSearchParams(window.location.search);
-
-    // Fill in the spans with submitted data
     document.getElementById("firstName").textContent = params.get("firstName") || "";
     document.getElementById("lastName").textContent = params.get("lastName") || "";
     document.getElementById("email").textContent = params.get("email") || "";
@@ -52,4 +50,3 @@
   </script>
 </body>
 </html>
-

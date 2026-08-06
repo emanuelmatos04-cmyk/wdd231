@@ -1,4 +1,5 @@
 @media (min-width: 48rem) {
+  /* Header */
   header {
     display: flex;
     justify-content: space-between;
@@ -6,7 +7,7 @@
   }
 
   .site-logo {
-    width: 180px; /* aún más grande en desktop */
+    width: 180px; /* larger logo on desktop */
     height: auto;
   }
 
@@ -16,10 +17,11 @@
     list-style: none;
   }
 
-  #menu {
-    display: none;
+  #menuButton {
+    display: none; /* hide hamburger on desktop */
   }
 
+  /* Main layout */
   main {
     max-width: 1200px;
     margin: 0 auto;
@@ -29,11 +31,56 @@
     padding: 2rem;
   }
 
-  .courses {
+  /* Hero section spans full width */
+  .hero {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  /* Discover cards grid */
+  .discover-cards {
     grid-column: 1 / -1;
     margin-top: 2rem;
   }
 
+  .grid-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 card8";
+  }
+
+  .card:nth-child(1) { grid-area: card1; }
+  .card:nth-child(2) { grid-area: card2; }
+  .card:nth-child(3) { grid-area: card3; }
+  .card:nth-child(4) { grid-area: card4; }
+  .card:nth-child(5) { grid-area: card5; }
+  .card:nth-child(6) { grid-area: card6; }
+  .card:nth-child(7) { grid-area: card7; }
+  .card:nth-child(8) { grid-area: card8; }
+
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Hover effect only on desktop */
+  .card img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Footer */
   footer {
     margin-top: 2rem;
     text-align: center;

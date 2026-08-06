@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Colonial Zone",
+    "address": "Zona Colonial, Santo Domingo",
+    "description": "UNESCO World Heritage Site with historic architecture.",
+    "image": "images/colonialzone.webp",
+    "link": "https://en.wikipedia.org/wiki/Colonial_Zone_(Santo_Domingo)"
+  },
+  {
+    "title": "Malecón",
+    "address": "George Washington Avenue",
+    "description": "Seaside boulevard with restaurants and nightlife.",
+    "image": "images/malecon.webp",
+    "link": "https://en.wikipedia.org/wiki/Malecon_(Santo_Domingo)"
+  },
+  {
+    "title": "National Botanical Garden",
+    "address": "Av. República de Colombia",
+    "description": "Tropical biodiversity and peaceful gardens.",
+    "image": "images/botanical.webp",
+    "link": "https://en.wikipedia.org/wiki/National_Botanical_Garden_(Dominican_Republic)"
+  },
+  {
+    "title": "Alcázar de Colón",
+    "address": "Plaza de España",
+    "description": "Historic palace built by Diego Columbus.",
+    "image": "images/alcazar.webp",
+    "link": "https://en.wikipedia.org/wiki/Alc%C3%A1zar_de_Col%C3%B3n"
+  },
+  {
+    "title": "Faro a Colón",
+    "address": "Av. España",
+    "description": "Monument and museum dedicated to Christopher Columbus.",
+    "image": "images/faro.webp",
+    "link": "https://en.wikipedia.org/wiki/Columbus_Lighthouse"
+  },
+  {
+    "title": "Los Tres Ojos",
+    "address": "Av. Las Américas",
+    "description": "Cave system with underground lakes.",
+    "image": "images/tresojo.webp",
+    "link": "https://en.wikipedia.org/wiki/Los_Tres_Ojos"
+  },
+  {
+    "title": "Plaza de la Cultura",
+    "address": "Av. Máximo Gómez",
+    "description": "Museums and cultural institutions in one area.",
+    "image": "images/plazacultura.webp",
+    "link": "https://en.wikipedia.org/wiki/Plaza_de_la_Cultura"
+  },
+  {
+    "title": "National Palace",
+    "address": "Av. México",
+    "description": "Government building with neoclassical architecture.",
+    "image": "images/palacio.webp",
+    "link": "https://en.wikipedia.org/wiki/National_Palace_(Dominican_Republic)"
+  }
+]

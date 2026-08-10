@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cultural events in Santo Domingo">
+  <meta name="author" content="Emanuel Matos">
+  <title>Events - Santo Domingo Cultural Hub</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css" media="screen and (min-width:1024px)">
+</head>
+<body>
+  <header>
+    <h1>Events</h1>
+    <nav>
+      <button id="menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="form.html">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="events-container">
+      <h2>Upcoming Cultural Events</h2>
+      <!-- Events dynamically loaded here -->
+    </section>
+
+    <!-- Modal -->
+    <dialog id="eventModal">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+      <button id="closeModal">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Emanuel Matos — Santo Domingo, Dominican Republic</p>
+    <p id="date"></p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://youtube.com/yourvideo" target="_blank">Demo Video</a></p>
+  </footer>
+  <script type="module" src="scripts.js"></script>
+</body>
+</html>

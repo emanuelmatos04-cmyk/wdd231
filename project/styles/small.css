@@ -1,0 +1,74 @@
+/* Base colors and typography */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #F5F5F5; /* Light Gray */
+  color: #333;
+}
+
+header, footer {
+  background: #003366; /* Deep Blue */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #003366; /* Deep Blue for headings */
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background: #003366; /* Deep Blue */
+  padding: 1rem;
+  margin: 0;
+}
+
+nav ul.show { display: flex; }
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav button {
+  display: inline-block;
+  background: #FF6600; /* Warm Orange */
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.event-card h3 {
+  color: #003366; /* Deep Blue */
+}
+
+button {
+  background: #FF6600; /* Warm Orange */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #cc5200; /* Darker Orange */
+}
+
+footer p {
+  margin: 0.5rem 0;
+}

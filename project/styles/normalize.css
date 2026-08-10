@@ -1,0 +1,8 @@
+/* Normalize.css essentials */
+/* Normalize.css essentials */
+html { line-height: 1.15; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background-color: #F5F5F5; color: #333; }
+main { display: block; }
+h1 { font-size: 2em; margin: 0.67em 0; }
+img { border-style: none; }
+button, input, select, textarea { font-family: inherit; font-size: 100%; }

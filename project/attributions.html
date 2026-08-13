@@ -1,16 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Charset -->
   <meta charset="UTF-8">
-  <title>Attributions</title>
+
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>Attributions - Santo Domingo Cultural Hub</title>
+
+  <!-- Meta description -->
+  <meta name="description" content="Credits and attributions for images, icons, and resources used in the Santo Domingo Cultural Hub project.">
+
+  <!-- Meta author -->
+  <meta name="author" content="Emanuel Matos">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Attributions - Santo Domingo Cultural Hub">
+  <meta property="og:description" content="Credits and attributions for images, icons, and resources used in the Santo Domingo Cultural Hub project.">
+  <meta property="og:image" content="https://emanuelmatos04-cmyk.github.io/wdd231/finalproject/images/og-image.jpg">
+  <meta property="og:url" content="https://emanuelmatos04-cmyk.github.io/wdd231/finalproject/attributions.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css" media="screen and (min-width:1024px)">
 </head>
 <body>
-  <h1>Attributions</h1>
-  <p>All images and content are used for educational purposes. Sources will be listed here.</p>
+  <header>
+    <h1>Attributions</h1>
+    <nav>
+      <button id="menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="form.html">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Credits</h2>
+      <p>All images used in this project are optimized and stored in the <code>images/</code> folder.</p>
+      <ul>
+        <li>Icons from <a href="https://fontawesome.com" target="_blank">Font Awesome</a></li>
+        <li>Images from <a href="https://unsplash.com" target="_blank">Unsplash</a></li>
+        <li>Demo video hosted on <a href="https://youtube.com" target="_blank">YouTube</a></li>
+      </ul>
+    </section>
+  </main>
+
   <footer>
     <p>&copy; 2026 Emanuel Matos — Santo Domingo, Dominican Republic</p>
     <p id="date"></p>
+    <p><a href="index.html">Back to Home</a></p>
   </footer>
-  <script src="scripts.js"></script>
+
+  <!-- External JS with defer -->
+  <script src="scripts/scripts.js" defer></script>
 </body>
 </html>

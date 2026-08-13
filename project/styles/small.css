@@ -2,12 +2,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  background-color: #F5F5F5; /* Light Gray */
+  background-color: #F5F5F5;
   color: #333;
 }
 
 header, footer {
-  background: #003366; /* Deep Blue */
+  background: #003366;
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -15,14 +15,14 @@ header, footer {
 
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
-  color: #003366; /* Deep Blue for headings */
+  color: #003366;
 }
 
 nav ul {
   list-style: none;
   display: none;
   flex-direction: column;
-  background: #003366; /* Deep Blue */
+  background: #003366;
   padding: 1rem;
   margin: 0;
 }
@@ -36,28 +36,49 @@ nav a {
 
 nav button {
   display: inline-block;
-  background: #FF6600; /* Warm Orange */
+  background: #FF6600;
   border: none;
   color: white;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
+.events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
 .event-card {
   background: #fff;
   border: 1px solid #ddd;
-  margin: 1rem 0;
+  margin: 0;
   padding: 1rem;
   border-radius: 5px;
   font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
 }
 
 .event-card h3 {
-  color: #003366; /* Deep Blue */
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.event-card p {
+  margin: 0.25rem 0;
+  color: #444;
 }
 
 button {
-  background: #FF6600; /* Warm Orange */
+  background: #FF6600;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -66,9 +87,47 @@ button {
 }
 
 button:hover {
-  background: #cc5200; /* Darker Orange */
+  background: #cc5200;
 }
 
 footer p {
   margin: 0.5rem 0;
+}
+
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
+#modalTitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: #003366;
+}
+
+#modalDescription {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+#closeModal {
+  padding: 0.5rem 1rem;
+  background-color: #cc0000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#closeModal:hover {
+  background-color: #990000;
 }

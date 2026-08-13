@@ -1,47 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Charset -->
   <meta charset="UTF-8">
+
+  <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cultural events in Santo Domingo">
-  <meta name="author" content="Emanuel Matos">
+
+  <!-- Title -->
   <title>Events - Santo Domingo Cultural Hub</title>
+
+  <!-- Meta description (50–160 chars) -->
+  <meta name="description" content="Discover cultural events in Santo Domingo including festivals, concerts, and community activities that highlight the city’s vibrant identity.">
+
+  <!-- Meta author -->
+  <meta name="author" content="Emanuel Matos">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Events - Santo Domingo Cultural Hub">
+  <meta property="og:description" content="Explore upcoming cultural events, concerts, and festivals in Santo Domingo. Join the community and celebrate local traditions.">
+  <meta property="og:image" content="https://emanuelmatos04-cmyk.github.io/wdd231/finalproject/images/og-image.jpg">
+  <meta property="og:url" content="https://emanuelmatos04-cmyk.github.io/wdd231/finalproject/events.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS files -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css" media="screen and (min-width:1024px)">
 </head>
 <body>
   <header>
-    <h1>Events</h1>
     <nav>
       <button id="menu">☰</button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="form.html">Join Us</a></li>
+        <li><a href="attributions.html">Attributions</a></li>
+        <li><a href="https://youtube.com/yourvideo" target="_blank">Demo Video</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="events-container">
-      <h2>Upcoming Cultural Events</h2>
-      <!-- Events dynamically loaded here -->
-    </section>
+    <h1>Upcoming Events</h1>
+    <section class="event-list">
+      <article class="event-card">
+        <h2>Festival de Cultura</h2>
+        <img src="images/festival.jpg" alt="Festival de Cultura in Santo Domingo" width="600">
+        <p>Celebrate Santo Domingo’s traditions with music, dance, and food. This annual festival brings together the community to honor local heritage.</p>
+      </article>
 
-    <!-- Modal -->
-    <dialog id="eventModal">
-      <h3 id="modalTitle"></h3>
-      <p id="modalDescription"></p>
-      <button id="closeModal">Close</button>
-    </dialog>
+      <article class="event-card">
+        <h2>Concert at Plaza</h2>
+        <img src="images/concert.jpg" alt="Concert at Plaza in Santo Domingo" width="600">
+        <p>Join us for a live concert featuring local artists. Enjoy an evening of music under the stars in the heart of Santo Domingo.</p>
+      </article>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Emanuel Matos — Santo Domingo, Dominican Republic</p>
     <p id="date"></p>
-    <p><a href="attributions.html">Attributions</a> | <a href="https://youtube.com/yourvideo" target="_blank">Demo Video</a></p>
   </footer>
-  <script type="module" src="scripts.js"></script>
+
+  <!-- External JS with defer -->
+  <script src="scripts/scripts.js" defer></script>
 </body>
 </html>

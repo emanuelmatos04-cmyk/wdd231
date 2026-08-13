@@ -6,11 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     el.textContent = "Date: " + new Date().toLocaleDateString();
   });
 
-  // ✅ Responsive nav toggle
+  // ✅ Responsive nav toggle (orange button ☰)
   const menuBtn = document.getElementById("menu");
-  if (menuBtn) {
+  const navLinks = document.querySelector(".nav-links");
+  if (menuBtn && navLinks) {
     menuBtn.addEventListener("click", () => {
-      document.querySelector(".nav-links").classList.toggle("show");
+      navLinks.classList.toggle("show");
     });
   }
 

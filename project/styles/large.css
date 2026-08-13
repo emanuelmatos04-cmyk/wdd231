@@ -1,112 +1,49 @@
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
+@media screen and (min-width:1024px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
 
-nav ul {
-  display: flex !important;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-  background: #003366; /* Deep Blue */
-}
+  nav ul {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    background: #003366;
+  }
 
-nav a {
-  color: #fff;
-  font-weight: bold;
-}
+  .events-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
 
-.events-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
+  .event-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    border-radius: 8px;
+  }
 
-.event-card {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
-}
+  .event-card img {
+    border-radius: 6px;
+  }
 
-.event-card:hover {
-  transform: translateY(-5px);
-}
+  .event-card h3 {
+    font-size: 1.2rem;
+  }
 
-.event-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 0.75rem;
-}
+  .event-card p {
+    font-size: 0.95rem;
+  }
 
-.event-card h3 {
-  color: #003366; /* Deep Blue */
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
+  #modalTitle {
+    font-size: 1.4rem;
+  }
 
-.event-card p {
-  font-size: 0.95rem;
-  color: #444;
-  margin: 0.25rem 0;
-}
-
-button {
-  background: #FF6600; /* Warm Orange */
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #cc5200;
-}
-
-/* Modal */
-dialog {
-  border: none;
-  border-radius: 8px;
-  padding: 1.5rem;
-  max-width: 500px;
-  width: 90%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-dialog::backdrop {
-  background: rgba(0,0,0,0.5);
-}
-
-#modalTitle {
-  font-size: 1.4rem;
-  margin-bottom: 0.75rem;
-  color: #003366;
-}
-
-#modalDescription {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-#closeModal {
-  padding: 0.5rem 1rem;
-  background-color: #cc0000;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#closeModal:hover {
-  background-color: #990000;
+  #modalDescription {
+    font-size: 1rem;
+  }
 }

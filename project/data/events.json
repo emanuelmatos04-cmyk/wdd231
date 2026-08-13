@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Concert in the Plaza",
+    "date": "2026-09-15",
+    "location": "Parque Colón, Santo Domingo",
+    "image": "images/concert.webp"
+    "description": "Enjoy a live concert featuring local artists under the stars in Santo Domingo’s historic plaza."
+  },
+  {
+    "id": 2,
+    "title": "Art Exhibition",
+    "date": "2026-10-05",
+    "location": "Museo de Arte Moderno, Santo Domingo",
+    "image": "images/art.jpg",
+    "description": "Discover contemporary Dominican art at this special exhibition showcasing painters and sculptors."
+  },
+  {
+    "id": 3,
+    "title": "Museum Tour",
+    "date": "2026-11-10",
+    "location": "Museo Nacional de Historia, Santo Domingo",
+    "image": "images/museum.jpg",
+    "description": "Join a guided tour exploring Dominican history and heritage at the National Museum."
+  },
+  {
+    "id": 4,
+    "title": "Museum Tour",
+    "date": "2026-11-20",
+    "location": "Museo de Arte Moderno, Santo Domingo",
+    "image": "images/museum2.jpg",
+    "description": "Experience another guided museum tour highlighting modern art collections and cultural insights."
+  },
+  {
+    "id": 5,
+    "title": "Activity Festival",
+    "date": "2026-12-02",
+    "location": "Plaza de la Cultura, Santo Domingo",
+    "image": "images/festival.jpg",
+    "description": "Celebrate Santo Domingo’s traditions with music, dance, food, and interactive community activities."
+  }
+]

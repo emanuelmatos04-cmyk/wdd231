@@ -21,9 +21,28 @@
     display: inline-block;
     background: #FF6600;
     border: none;
-    color: white;
+    color: #000; /* Contrast fix */
     padding: 0.5rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+
+  nav button:hover,
+  nav button:focus {
+    background: #cc5200; /* Darker orange for better contrast */
+    outline: 2px solid #000; /* Visible focus indicator */
+  }
+
+  nav a {
+    color: #fff; /* Contrast fix */
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    text-decoration: underline; /* Clear hover/focus feedback */
+    color: #ffcc00; /* Optional: bright yellow for strong contrast */
   }
 
   .events-container {
@@ -39,6 +58,7 @@
     align-items: center;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
   }
 
   .event-card:hover {
@@ -57,10 +77,12 @@
 
   .event-card h3 {
     font-size: 1.2rem;
+    color: #003366; /* Brand color, compliant on white */
   }
 
   .event-card p {
     font-size: 0.95rem;
+    color: #000; /* Ensures readability */
   }
 
   #modalTitle {

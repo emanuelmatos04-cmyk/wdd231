@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ✅ Weather API (Santo Domingo)
   async function loadWeather() {
     try {
-      const apiKey = "1a3a4fc451423e2498a73f14f41ccbc1"; // Replace with your OpenWeatherMap API key
+      const apiKey = "2b0cf47fc7d401487171c99e3dcb7a76"; // Replace with your OpenWeatherMap API key
       const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=Santo%20Domingo&appid=${apiKey}&units=metric`
       );

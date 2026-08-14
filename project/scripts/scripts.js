@@ -59,4 +59,38 @@ document.addEventListener("DOMContentLoaded", () => {
       closeBtn.addEventListener("click", () => modal.close());
     }
   }
+
+  // ✅ Weather API (Santo Domingo)
+  async function loadWeather() {
+    try {
+      const apiKey = "1a3a4fc451423e2498a73f14f41ccbc1"; // Replace with your OpenWeatherMap API key
+      const response = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=Santo%20Domingo&appid=${apiKey}&units=metric`
+      );
+      if (!response.ok) throw new Error("Weather API error");
+      const data = await response.json();
+
+      const temp = data.main.temp;
+      const description = data.weather[0].description;
+      const humidity = data.main.humidity;
+      const icon = data.weather[0].icon;
+
+      const weatherInfo = document.getElementById("weather-info");
+      if (weatherInfo) {
+        weatherInfo.innerHTML = `
+          <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${description}">
+          ${temp}°C, ${description}, Humidity: ${humidity}%
+        `;
+      }
+    } catch (error) {
+      const weatherInfo = document.getElementById("weather-info");
+      if (weatherInfo) {
+        weatherInfo.textContent = "Unable to load weather data.";
+      }
+    }
+  }
+
+  if (document.getElementById("weather-info")) {
+    loadWeather();
+  }
 });

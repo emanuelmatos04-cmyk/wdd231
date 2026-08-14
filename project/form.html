@@ -43,7 +43,8 @@
     <section>
       <p>Fill out the form below to become part of the Santo Domingo Cultural Hub. Your participation helps us grow and celebrate our culture together.</p>
       
-      <form action="thankyou.html" method="post">
+      <!-- ✅ Fixed: changed method to GET -->
+      <form action="thankyou.html" method="get">
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -71,7 +72,6 @@
     <p>&copy; 2026 Emanuel Matos — Santo Domingo, Dominican Republic</p>
     <p id="date"></p>
   </footer>
-
-  
 </body>
 </html>
+

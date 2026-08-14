@@ -6,11 +6,24 @@
   }
 
   nav ul {
-    display: flex !important;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
     background: #003366;
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav button {
+    display: inline-block;
+    background: #FF6600;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .events-container {
@@ -25,21 +38,21 @@
     grid-template-columns: 2fr 1fr;
     align-items: center;
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .event-card:hover {
-    transform: translateY(-5px) scale(1.03); /* Smooth lift + zoom */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Shadow animation */
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   }
 
   .event-card img {
     border-radius: 6px;
-    transition: transform 0.3s ease; /* Image animation */
+    transition: transform 0.3s ease;
   }
 
   .event-card:hover img {
-    transform: scale(1.05); /* Subtle zoom on image */
+    transform: scale(1.05);
   }
 
   .event-card h3 {

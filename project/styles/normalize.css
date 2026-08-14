@@ -1,10 +1,25 @@
 /* Normalize.css essentials */
-html { line-height: 1.15; -webkit-text-size-adjust: 100%; }
-body { margin: 0; background-color: #F5F5F5; color: #333; }
-main { display: block; max-width: 1200px; margin: 0 auto; padding: 1rem; }
+html {
+  line-height: 1.15;
+  text-size-adjust: 100%; /* Updated: standardized property */
+}
+body {
+  margin: 0;
+  background-color: #F5F5F5;
+  color: #333;
+}
+main {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
 h1 { font-size: 2em; margin: 0.67em 0; }
 img { border-style: none; max-width: 100%; height: auto; }
-button, input, select, textarea { font-family: inherit; font-size: 100%; }
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
 
 /* Header & Footer */
 header, footer {
@@ -31,31 +46,29 @@ nav ul {
 nav ul.show { display: flex; }
 
 nav a {
-  color: #fff; /* Contrast fix: white text on deep blue */
+  color: #fff; /* Contrast fix */
   text-decoration: none;
   font-weight: bold;
 }
-
 nav a:hover,
 nav a:focus {
-  text-decoration: underline; /* Clear feedback */
-  color: #ffcc00; /* Optional: bright yellow for strong contrast */
+  text-decoration: underline;
+  color: #ffcc00; /* Strong contrast */
 }
 
 nav button {
   display: inline-block;
   background: #FF6600;
   border: none;
-  color: #000; /* Contrast fix: black text for 12:1 ratio */
+  color: #000; /* Contrast fix */
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   cursor: pointer;
 }
-
 nav button:hover,
 nav button:focus {
-  background: #cc5200; /* Darker orange for better contrast */
-  outline: 2px solid #000; /* Visible focus indicator */
+  background: #cc5200; /* Darker orange */
+  outline: 2px solid #000; /* Focus indicator */
 }
 
 /* Events */
@@ -101,10 +114,9 @@ button {
   cursor: pointer;
   border-radius: 4px;
 }
-
 button:hover,
 button:focus {
-  background: #cc5200; /* Darker orange */
+  background: #cc5200;
   outline: 2px solid #000; /* Focus indicator */
 }
 
